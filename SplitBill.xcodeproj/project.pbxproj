@@ -11,6 +11,8 @@
 		41E5C49A281691CD00822201 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5C499281691CD00822201 /* ContentView.swift */; };
 		41E5C49C281691CD00822201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E5C49B281691CD00822201 /* Assets.xcassets */; };
 		41E5C49F281691CD00822201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E5C49E281691CD00822201 /* Preview Assets.xcassets */; };
+		41E5C4A62816923000822201 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5C4A52816923000822201 /* CardView.swift */; };
+		41E5C4A82816A31200822201 /* PersonCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5C4A72816A31200822201 /* PersonCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		41E5C499281691CD00822201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41E5C49B281691CD00822201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E5C49E281691CD00822201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41E5C4A52816923000822201 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		41E5C4A72816A31200822201 /* PersonCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				41E5C497281691CD00822201 /* SplitBillApp.swift */,
 				41E5C499281691CD00822201 /* ContentView.swift */,
+				41E5C4A52816923000822201 /* CardView.swift */,
+				41E5C4A72816A31200822201 /* PersonCountView.swift */,
 				41E5C49B281691CD00822201 /* Assets.xcassets */,
 				41E5C49D281691CD00822201 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E5C49A281691CD00822201 /* ContentView.swift in Sources */,
+				41E5C4A62816923000822201 /* CardView.swift in Sources */,
 				41E5C498281691CD00822201 /* SplitBillApp.swift in Sources */,
+				41E5C4A82816A31200822201 /* PersonCountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
