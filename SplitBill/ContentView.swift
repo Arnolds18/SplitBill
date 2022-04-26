@@ -100,7 +100,7 @@ struct ContentView: View {
                 PersonCountView(personCount: $numberOfPeople)
             }
         }
-        .padding()
+        .padding(30)
         
     }
 }
@@ -108,7 +108,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
+            
             
     }
 }
