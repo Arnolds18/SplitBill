@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CardView: View {
     var cardLabelText = ""
-    var totalAmount = 999999
-    var subtotalAmount = 999999
-    var taxAmount = 99999
+    var totalAmount = 999999.00
+    var subtotalAmount = 999999.00
+    var taxAmount = 99999.00
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             Text(cardLabelText).foregroundColor(.orange).fontWeight(.black)
@@ -22,7 +22,7 @@ struct CardView: View {
             HStack{
                 Spacer()
                 
-                Text("Rp \(totalAmount)").foregroundColor(.white).font(.system(size: 30, weight: .bold)).fontWeight(.black)
+                Text("Rp \(totalAmount, specifier: "%.2f")").foregroundColor(.white).font(.system(size: 22, weight: .bold)).fontWeight(.black)
                 Spacer()
                 
                 Rectangle().foregroundColor(Color(red:128/255, green: 128/255, blue: 128/255))
@@ -34,7 +34,7 @@ struct CardView: View {
                     VStack(alignment: .leading){
                         Text("SUBTOTAL").font(.system(.caption, design: .rounded))
                             .fontWeight(.light)
-                        Text("Rp \(subtotalAmount)")
+                        Text("Rp \(subtotalAmount, specifier: "%.2f")")
                             .font(.system(.body))
                             .fontWeight(.bold)
                     }
@@ -42,7 +42,7 @@ struct CardView: View {
                     VStack(alignment: .leading){
                         Text("TAX").font(.system(.caption, design:.rounded))
                             .fontWeight(.light)
-                        Text("Rp\(taxAmount)")
+                        Text("Rp\(taxAmount, specifier: "%.2f")")
                             .font(.system(.body))
                             .fontWeight(.bold)
                     }
@@ -60,6 +60,7 @@ struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView(cardLabelText: "Per Person")
             .frame(width: 300, height: 150)
+            .previewInterfaceOrientation(.portrait)
     }
 }
 }
