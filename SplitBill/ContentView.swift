@@ -55,22 +55,23 @@ struct ContentView: View {
     }
     
     var body: some View {
-        GeometryReader { geo in
-            VStack(alignment: .center, spacing: 20){
-                CardView(cardLabelText: "PER PERSON", totalAmount: totalPerPerson,
-                    subtotalAmount: subTotalPerPerson,
-                    taxAmount: taxValuePerPerson)
-                    .frame(width: geo.size.width, height: 100)
+            GeometryReader { geo in
+                VStack(alignment: .center, spacing: 20){
+                    CardView(cardLabelText: "PER PERSON",
+                             totalAmount: totalPerPerson,
+                             subtotalAmount: subTotalPerPerson,
+                             taxAmount: taxValuePerPerson)
+                        .frame(width: geo.size.width, height: 100)
                 
-                CardView(cardLabelText: "TOTAL",
-                    totalAmount: totalAmountWithTax,
-                    subtotalAmount: subTotal,
-                    taxAmount: taxValue)
-                .frame(width: geo.size.width, height: 100)
+                    CardView(cardLabelText: "TOTAL",
+                             totalAmount: totalAmountWithTax,
+                             subtotalAmount: subTotal,
+                             taxAmount: taxValue)
+                        .frame(width: geo.size.width, height: 100)
                 
-                Picker("Tax Percentage", selection: $taxPercentage) {
-                    ForEach(0..<taxPercentages.count) {
-                        Text("\(self.taxPercentages[$0])%")
+                    Picker("Tax Percentage", selection: $taxPercentage) {
+                        ForEach(0..<taxPercentages.count) {
+                            Text("\(self.taxPercentages[$0])%")
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
@@ -81,7 +82,7 @@ struct ContentView: View {
                     Text("Rp")
                         .foregroundColor(.primary)
                         .font(.system(size: 60, weight: .black))
-                    TextField("Amount", text: $checkAmount)
+                    TextField("0.00", text: $checkAmount)
                         .foregroundColor(.primary)
                         .font(.system(size: 60, weight: .black))
                         .keyboardType(.decimalPad)
@@ -101,7 +102,6 @@ struct ContentView: View {
             }
         }
         .padding(30)
-        
     }
 }
 
