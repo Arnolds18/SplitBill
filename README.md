@@ -1,6 +1,11 @@
 
 # Split Bill
 
+<p align="center">
+  <img src="./images/2900x300.png"/>
+</p>
+
+
 Split billing is the division of a bill for service into two or more parts.
 The case that often happens is that people go out to eat at a restaurant with other people and they want to pay the bill for each person. tax is one of the problems, the distribution becomes unequal. So this is the app statement :
 
