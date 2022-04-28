@@ -24,6 +24,11 @@ by using split bill calculation.
 **IDE:** XCode ``v.13.3``
 
 
+## Screenshots
+
+<img src="./images/mockup%20home.png" width=400/>
+
+
 
 
 ## Authors
