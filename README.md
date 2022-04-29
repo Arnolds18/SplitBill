@@ -38,6 +38,6 @@ These are the mockup screenshot of this Split Bill app.
 
 ## Notes
 
-This repo is used for Nano Challenge 1 at Apple Developer Academy @UC 2022
+This repo is used for Nano Challenge 1 at Apple Developer Academy @UC 2022.
 
 
