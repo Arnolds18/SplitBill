@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var checkAmount = ""
     @State private var numberOfPeople = 2
-    @State private var taxPercentage = 2
+    @State private var taxPercentage = 1
     @FocusState private var isInputActive: Bool
     
-    private let taxPercentages = [0, 10, 11]
+    private let taxPercentages = [0, 11]
     
     private var subTotal: Double { Double(checkAmount) ?? 0}
     
