@@ -68,7 +68,8 @@ struct ContentView: View {
                              subtotalAmount: subTotal,
                              taxAmount: taxValue)
                         .frame(width: geo.size.width, height: 100)
-                
+                    
+                    TitleView(title: "TAX")
                     Picker("Tax Percentage", selection: $taxPercentage) {
                         ForEach(0..<taxPercentages.count) {
                             Text("\(self.taxPercentages[$0])%")
@@ -81,10 +82,10 @@ struct ContentView: View {
                 HStack{
                     Text("Rp")
                         .foregroundColor(.primary)
-                        .font(.system(size: 60, weight: .black))
+                        .font(.system(size: 40, weight: .black))
                     TextField("0.00", text: $checkAmount)
                         .foregroundColor(.primary)
-                        .font(.system(size: 60, weight: .black))
+                        .font(.system(size: 40, weight: .black))
                         .keyboardType(.decimalPad)
                         .focused($isInputActive)
                     
