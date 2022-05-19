@@ -82,16 +82,16 @@ struct ContentView: View {
                 HStack{
                     Text("Rp")
                         .foregroundColor(.primary)
-                        .font(.system(size: 40, weight: .black))
+                        .font(Font(UIFont.systemFont(ofSize: 40, weight: .black)))
                     TextField("0.00", text: $checkAmount)
                         .foregroundColor(.primary)
-                        .font(.system(size: 40, weight: .black))
+                        .font(Font(UIFont.systemFont(ofSize: 40, weight: .black)))
                         .keyboardType(.decimalPad)
                         .focused($isInputActive)
                         .accessibilityLabel("Amount")
                     
                         .toolbar {
-                            ToolbarItemGroup(placement: .keyboard   ) {
+                            ToolbarItemGroup(placement: .keyboard) {
                                 Spacer()
                                 Button("Done") {
                                     isInputActive = false

@@ -24,7 +24,7 @@ struct PersonCountView: View {
                 }
                 Text("\(personCount)")
                     .foregroundColor(.primary)
-                    .font(.system(size: 40, weight: .black))
+                    .font(Font(UIFont.systemFont(ofSize: 40, weight: .black)))
             
                 Button{
                     personCount += 1
@@ -36,7 +36,7 @@ struct PersonCountView: View {
             }
             Text("PERSONS")
                 .foregroundColor(.primary)
-                .font(.system(size: 20, weight: .black))
+                .font(Font(UIFont.systemFont(ofSize: 20, weight: .black)))
         }
     }
 }
