@@ -17,7 +17,7 @@ struct CardView: View {
             Text(cardLabelText).foregroundColor(.orange).fontWeight(.black)
             
         ZStack{
-            Rectangle().foregroundColor(.gray).cornerRadius(20)
+            Rectangle().foregroundColor(Color(red:110/255, green: 110/255, blue: 110/255)).cornerRadius(20)
             
             HStack{
                 Spacer()
@@ -25,7 +25,7 @@ struct CardView: View {
                 Text("Rp \(totalAmount, specifier: "%.2f")").foregroundColor(.white).font(.system(size: 22, weight: .bold)).fontWeight(.black)
                 Spacer()
                 
-                Rectangle().foregroundColor(Color(red:128/255, green: 128/255, blue: 128/255))
+                Rectangle().foregroundColor(Color(red:110/255, green: 110/255, blue: 110    /255))
                     .frame(width: 1, height: 70)
                 
                 Spacer()
@@ -43,7 +43,7 @@ struct CardView: View {
                         Text("TAX").font(.system(.caption, design:.rounded))
                             .fontWeight(.light)
                         Text("Rp\(taxAmount, specifier: "%.2f")")
-                            .font(.system(.body))
+                            .font(.system(size: 14))
                             .fontWeight(.bold)
                     }
                 }
