@@ -88,6 +88,7 @@ struct ContentView: View {
                         .font(.system(size: 40, weight: .black))
                         .keyboardType(.decimalPad)
                         .focused($isInputActive)
+                        .accessibilityLabel("Amount")
                     
                         .toolbar {
                             ToolbarItemGroup(placement: .keyboard   ) {

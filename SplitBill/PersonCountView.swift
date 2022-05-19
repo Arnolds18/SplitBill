@@ -35,7 +35,8 @@ struct PersonCountView: View {
                 }
             }
             Text("PERSONS")
-                .foregroundColor(.primary).font(.system(size: 20, weight: .black))
+                .foregroundColor(.primary)
+                .font(.system(size: 20, weight: .black))
         }
     }
 }
