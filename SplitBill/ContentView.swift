@@ -98,7 +98,7 @@ struct ContentView: View {
                             }
                         }
                 }
-                TitleView(title: "SPLIT")
+                TitleView(title: "SPLIT INTO")
                 PersonCountView(personCount: $numberOfPeople)
             }
         }

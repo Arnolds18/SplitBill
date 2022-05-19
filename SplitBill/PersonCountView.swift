@@ -11,27 +11,31 @@ struct PersonCountView: View {
     @Binding var personCount: Int
     
     var body: some View {
-        HStack(spacing: 20){
-            Button {
-                if personCount > 1 {
-                    personCount -= 1
+        VStack(spacing:10){
+            HStack(spacing: 20){
+                Button {
+                    if personCount > 1 {
+                        personCount -= 1
+                    }
+                } label: {
+                    Image(systemName: "minus.circle")
+                        .foregroundColor(.orange)
+                        .font(.system(.title, design:.rounded))
                 }
-            } label: {
-                Image(systemName: "minus.circle")
-                    .foregroundColor(.orange)
-                    .font(.system(.title, design:.rounded))
-            }
-            Text("\(personCount)")
-                .foregroundColor(.primary)
-                .font(.system(size: 40, weight: .black))
+                Text("\(personCount)")
+                    .foregroundColor(.primary)
+                    .font(.system(size: 40, weight: .black))
             
-            Button{
-                personCount += 1
-            } label: {
-                Image(systemName: "plus.circle")
-                    .foregroundColor(.orange)
-                    .font(.system(.title, design: .rounded))
+                Button{
+                    personCount += 1
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .foregroundColor(.orange)
+                        .font(.system(.title, design: .rounded))
+                }
             }
+            Text("PERSONS")
+                .foregroundColor(.primary).font(.system(size: 20, weight: .black))
         }
     }
 }
