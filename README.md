@@ -25,7 +25,7 @@ by using split bill calculation.
 
 
 ## Screenshots
-These are the mockup screenshot of this Split Bill app.
+These are the mockup screenshot of this Split Bill app. This application can be used in light mode and dark mode.
 <p align=center>
 <img src="./images/mockup%20home.png" width=200/> <img src="./images/mockup%20with%20key.png" width=200/>
 </p>
