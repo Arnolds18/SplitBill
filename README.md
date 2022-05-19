@@ -33,8 +33,6 @@ These are the mockup screenshot of this Split Bill app. This application can be 
   <img src="./images/mockup%20home%20with%20key%20dark.png" width=200/>
 </p>
 
-*Screenshot was taken before any recent update*
-
 
 ## Authors
 
