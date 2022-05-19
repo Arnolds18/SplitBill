@@ -29,6 +29,8 @@ These are the mockup screenshot of this Split Bill app. This application can be 
 <p align=center>
   <img src="./images/mockup%20home.png" width=200/> 
   <img src="./images/mockup%20home%20with%20key.png" width=200/>
+  <img src="./images/mock%20up%20home%20dark.png" width=200/>
+  <img src="./images/mockup%20home%20with%20key%20dark.png" width=200/>
 </p>
 
 *Screenshot was taken before any recent update*
@@ -38,9 +40,22 @@ These are the mockup screenshot of this Split Bill app. This application can be 
 
 [Arnold Sidiprasetija](https://github.com/Arnolds18)
 
+Undergraduate Student Majoring in Computer Engineering (class of 2019) at Institut Sepuluh Nopember.<br>
+Apple Developer Academy @UC 2022 Cohort.
+
+
+## Feedback
+
+If there any feedback, please reach me out at arnolds1809@gmail.com
+
 
 ## Notes
 
 This repo is used for Nano Challenge 1 at Apple Developer Academy @UC 2022.
+
+
+
+
+
 
 
