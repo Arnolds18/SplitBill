@@ -38,7 +38,7 @@ These are the mockup screenshot of this Split Bill app. This application can be 
 
 [Arnold Sidiprasetija](https://github.com/Arnolds18)
 
-Undergraduate Student Majoring in Computer Engineering (class of 2019) at Institut Sepuluh Nopember.<br>
+Thrid Year Student Majoring in Computer Engineering at Institut Sepuluh Nopember.<br>
 Apple Developer Academy @UC 2022 Cohort.
 
 
