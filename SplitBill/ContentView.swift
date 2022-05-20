@@ -101,6 +101,7 @@ struct ContentView: View {
                         }
                 }
                 TitleView(title: "SPLIT INTO")
+                        .accessibilityLabel("How many person are involved in this bill?")
                 PersonCountView(personCount: $numberOfPeople)
             }
         }

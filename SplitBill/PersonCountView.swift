@@ -25,6 +25,7 @@ struct PersonCountView: View {
                 Text("\(personCount)")
                     .foregroundColor(.primary)
                     .font(Font(UIFont.systemFont(ofSize: 40, weight: .black)))
+                        .accessibilityLabel("The number of person in this bill")
             
                 Button{
                     personCount += 1
@@ -37,6 +38,7 @@ struct PersonCountView: View {
             Text("PERSONS")
                 .foregroundColor(.primary)
                 .font(Font(UIFont.systemFont(ofSize: 20, weight: .black)))
+            
         }
     }
 }
