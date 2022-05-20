@@ -76,7 +76,8 @@ struct ContentView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                
+                .accessibilityLabel("The percentage of the tax that used in transactions.")
+                    
                 TitleView(title: "BILL AMOUNT")
                 
                 HStack{
@@ -88,7 +89,7 @@ struct ContentView: View {
                         .font(Font(UIFont.systemFont(ofSize: 40, weight: .black)))
                         .keyboardType(.decimalPad)
                         .focused($isInputActive)
-                        .accessibilityLabel("Amount")
+                        .accessibilityLabel("Amount of your bill that you have input.")
                     
                         .toolbar {
                             ToolbarItemGroup(placement: .keyboard) {
